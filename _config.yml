@@ -1,0 +1,41 @@
+name: Markyun
+description: "Front-End Engineer"
+meta_description: "爱骑行、爱摄影、爱阅读的理想青年，前端工程师"
+
+aboutPage: true
+paginate: 30
+markdown: redcarpet
+highlighter: pygments
+# pygments: true
+baseurl: /
+domain_name: 'http://markyun.github.io'
+# google_analytics: 'UA-XXXXXXXX-X'
+disqus: false
+disqus_shortname: 'markyungithub'
+
+# Details for the RSS feed generator
+url:            'http://markyun.github.io'
+author:         'markyun'
+authorTwitter:  'majinyun0802'
+
+permalink:       /:year/:title/
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post
